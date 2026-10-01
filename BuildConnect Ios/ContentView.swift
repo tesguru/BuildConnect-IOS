@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  BuildConnect Ios
-//
-//  Created by Olaogun Teslim on 29/09/2026.
-//
 
 import SwiftUI
 
