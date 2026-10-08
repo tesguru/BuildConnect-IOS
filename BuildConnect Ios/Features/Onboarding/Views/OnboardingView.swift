@@ -10,9 +10,8 @@ struct OnboardingView: View {
             Image(viewModel.pages[viewModel.currentPage].ImageBackground)
                 .resizable()
                 .scaledToFill()
+                .ignoresSafeArea()
             
-           
-          
             VStack{
               
                 HStack{
@@ -53,7 +52,7 @@ struct OnboardingView: View {
         .multilineTextAlignment(.center)
         .foregroundStyle(.white)
         .font(.workSansExtraBold(26))
-        .padding(.horizontal, 25)
+        .padding(.horizontal, 24)
 
             Text(viewModel.pages[index].description)
         .multilineTextAlignment(.center)

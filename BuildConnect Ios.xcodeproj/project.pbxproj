@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		555E3B443076CB41000F769D /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 555E3B433076CB41000F769D /* PhoneNumberKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		556452DE306BBE0D00FECD89 /* BuildConnect Ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BuildConnect Ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555E3B443076CB41000F769D /* PhoneNumberKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = "BuildConnect Ios";
 			packageProductDependencies = (
+				555E3B433076CB41000F769D /* PhoneNumberKit */,
 			);
 			productName = "BuildConnect Ios";
 			productReference = 556452DE306BBE0D00FECD89 /* BuildConnect Ios.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 556452D5306BBE0D00FECD89;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				555E3B423076CB41000F769D /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 556452DF306BBE0D00FECD89 /* Products */;
 			projectDirPath = "";
@@ -343,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		555E3B423076CB41000F769D /* XCRemoteSwiftPackageReference "PhoneNumberKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PhoneNumberKit/PhoneNumberKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		555E3B433076CB41000F769D /* PhoneNumberKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 555E3B423076CB41000F769D /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
+			productName = PhoneNumberKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 556452D6306BBE0D00FECD89 /* Project object */;
 }

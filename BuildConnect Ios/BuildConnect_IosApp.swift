@@ -1,6 +1,7 @@
 
 
 import SwiftUI
+import SwiftData
 
 @main
 struct BuildConnect_IosApp: App {
@@ -8,5 +9,7 @@ struct BuildConnect_IosApp: App {
         WindowGroup {
             RootView()
         }
+        .modelContainer(for: UserProfile.self)
     }
+    
 }
