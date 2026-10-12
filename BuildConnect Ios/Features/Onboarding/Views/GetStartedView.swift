@@ -26,15 +26,8 @@ struct GetStartedView: View {
                     RoleToggle(selected: selectedRole)
                         .padding(.horizontal, 24)
 
-                    Button {
+                    PrimaryButton(title: "Create account") {
                         path.append(.signUp)
-                    } label: {
-                        Text("Create account")
-                            .font(.interMedium(18))
-                            .foregroundStyle(.white)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 20)
-                            .background(Capsule().fill(Color.blue))
                     }
                     .padding(.horizontal, 24)
 
@@ -61,9 +54,9 @@ struct GetStartedView: View {
             .navigationDestination(for: AuthRouteModel.self) { route in
                 switch route {
                 case .signUp:
-                    SignUpView()
+                    SignUpView(path: $path)
                 case .login:
-                    LoginView()
+                    LoginView(path: $path)
                 }
             }
         }

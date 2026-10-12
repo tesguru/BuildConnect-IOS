@@ -10,12 +10,10 @@ struct PasswordTextField: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
 
-            // 1. The label
             Text(title)
                 .font(.interMedium(16))
                 .foregroundStyle(.black)
 
-            // 2. The box
             HStack {
                 if isHidden {
                     SecureField(placeholder, text: $text)

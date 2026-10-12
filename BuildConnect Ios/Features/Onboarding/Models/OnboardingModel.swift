@@ -26,7 +26,5 @@ struct OnboardingScreen: Identifiable{
         )
         
     ]
-        
-    
 }
 
